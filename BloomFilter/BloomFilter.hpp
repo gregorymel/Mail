@@ -162,10 +162,10 @@ public:
 
 template <typename Key>
 BloomFilter<Key>::BloomFilter( size_t m_size, uint8_t m_hashs, 
-						       Hash _hashA, Hash _hashB) : m_size( m_size),
-								  	 					   m_hashs( m_hashs),
-													       hashA( _hashA),
-													       hashB( _hashB)
+			       Hash _hashA, Hash _hashB) : m_size( m_size),
+							   m_hashs( m_hashs),
+							   hashA( _hashA),
+							   hashB( _hashB)
 {
 	m_flags.resize( m_size);
 }
